@@ -82,11 +82,22 @@ and (min-resolution: 192dpi) {
 }
 
 body {
-    background: linear-gradient(90deg, #9B59B6, #C7CCE0);
+    background: linear-gradient(33deg, #9B59B6, #C7CCE0);
     background-size: cover;
     animation: shimmer 2s infinite;
 }
 
+#lux {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+ p {
+      font-size: 18px;
+   }
+   
 @keyframes shimmer {
 /*    0% {
         background-position: -500px;
