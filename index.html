@@ -2,16 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Rogier Chardet</title>
+<title>Rogier | Chardet</title>
 <link href="stylez.css" rel="stylesheet" type="text/css">
 <link href="normalize.css" rel="stylesheet" type="text/css">
 <link href="" rel="icon" type="image/x-icon" />
 <style>
-body {
-  background: linear-gradient(90deg, purple, periwinkle);
-  height: 100%;
-  width: 100%;
-}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -85,19 +80,29 @@ only screen
 and (min-resolution: 192dpi) {
 
 }
-</style>	
+
+body {
+    background: linear-gradient(90deg, #9B59B6, #C7CCE0);
+    background-size: cover;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -500px;
+    }
+    100% {
+        background-position: 500px;
+    }
+}
+</style>
+<script>
+    // add shimmer effect to body element
+    document.body.classList.add('shimmer');
+</script>
 </head>
 
 <body>
 <div id="lux"><p>lux@mystic.io</p></div>
-
-<script>
-const shimmer = setInterval(() => {
-const body = document.querySelector('body');
-body.style.background = body.style.background === 'linear-gradient(to bottom right, purple, pink)'
-? 'linear-gradient(to top left, purple, pink)'
-: 'linear-gradient(to bottom right, purple, pink)';
-}, 2000);
-</script>
 </body>
 </html>
